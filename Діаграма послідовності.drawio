@@ -1,0 +1,100 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram id="GgGzRdbBjbph3VZB-Maq" name="Страница — 1">
+    <mxGraphModel dx="1426" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z_box" value="Zabbix Server" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="80" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a_box" value="Asterisk (PBX)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="620" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p_box" value="IP-Phone" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="z_line" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry x="160" y="90" x2="160" y2="920" as="geometry" />
+        </mxCell>
+        <mxCell id="a_line" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry x="700" y="90" x2="700" y2="920" as="geometry" />
+        </mxCell>
+        <mxCell id="p_line" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#d6b656;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry x="1240" y="90" x2="1240" y2="920" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="Виявлення аварії сервера" style="shape=note;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffe6cc;strokeColor=#d79b00;size=11;" parent="1" vertex="1">
+          <mxGeometry x="130" y="120" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rect1" value="Ініціювання дзвінка" style="text;html=1;strokeColor=#9999cc;fillColor=#f0f0ff;align=left;verticalAlign=top;spacingLeft=5;fontSize=11;fontStyle=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="130" y="170" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="msg1" value="API POST /call (Запит на виклик)" style="endArrow=block;endFill=1;html=1;fontSize=11;strokeColor=#000000;" parent="1" edge="1">
+          <mxGeometry x="160" y="210" x2="700" y2="210" as="geometry" />
+        </mxCell>
+        <mxCell id="rect2" value="Встановлення SIP-з&#39;єднання" style="text;html=1;strokeColor=#82b366;fillColor=#f0fff0;align=left;verticalAlign=top;spacingLeft=5;fontSize=11;fontStyle=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="670" y="260" width="600" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="msg2" value="SIP INVITE (Ініціювання виклику)" style="endArrow=block;endFill=1;html=1;fontSize=11;" parent="1" edge="1">
+          <mxGeometry x="700" y="300" x2="1240" y2="300" as="geometry" />
+        </mxCell>
+        <mxCell id="msg3" value="100 Trying" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=11;" parent="1" edge="1">
+          <mxGeometry x="1240" y="340" x2="700" y2="340" as="geometry" />
+        </mxCell>
+        <mxCell id="msg4" value="200 OK (Відповідь)" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=11;" parent="1" edge="1">
+          <mxGeometry x="1240" y="390" x2="700" y2="390" as="geometry" />
+        </mxCell>
+        <mxCell id="msg5" value="ACK (Підтвердження)" style="endArrow=block;endFill=1;html=1;fontSize=11;" parent="1" edge="1">
+          <mxGeometry x="700" y="450" x2="1240" y2="450" as="geometry" />
+        </mxCell>
+        <mxCell id="rect3" value="Передача голосового повідомлення (RTP)" style="text;html=1;strokeColor=#00aa00;fillColor=#f0fff0;align=left;verticalAlign=top;spacingLeft=5;fontSize=11;fontStyle=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="670" y="500" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="msg6" value="RTP Audio: &quot;Сервер недоступний&quot;" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=11;strokeColor=#00aa00;" parent="1" edge="1">
+          <mxGeometry x="700" y="535" x2="1240" y2="535" as="geometry" />
+        </mxCell>
+        <mxCell id="rect4" value="Завершення з&#39;єднання" style="text;html=1;strokeColor=#d79b00;fillColor=#fff8f0;align=left;verticalAlign=top;spacingLeft=5;fontSize=11;fontStyle=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="670" y="600" width="600" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="msg7" value="SIP BYE (Завершення сесії)" style="endArrow=block;endFill=1;html=1;fontSize=11;" parent="1" edge="1">
+          <mxGeometry x="1240" y="640" x2="700" y2="640" as="geometry" />
+        </mxCell>
+        <mxCell id="msg8" value="200 OK" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=11;" parent="1" edge="1">
+          <mxGeometry x="700" y="690" x2="1240" y2="690" as="geometry" />
+        </mxCell>
+        <mxCell id="rect5" value="Звіт про виконання" style="text;html=1;strokeColor=#cc0000;fillColor=#fff0f0;align=left;verticalAlign=top;spacingLeft=5;fontSize=11;fontStyle=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="130" y="740" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="msg9" value="Success Report (Виклик завершено)" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=11;" parent="1" edge="1">
+          <mxGeometry x="700" y="775" x2="160" y2="775" as="geometry" />
+        </mxCell>
+        <mxCell id="z_box2" value="Zabbix Server" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="80" y="870" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a_box2" value="Asterisk (PBX)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="620" y="870" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p_box2" value="IP-Phone" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="870" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vN-N5f46YibUxU1HvUuY-1" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;opacity=30;" edge="1" parent="1" source="z_box2" target="z_box">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="470" as="sourcePoint" />
+            <mxPoint x="750" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vN-N5f46YibUxU1HvUuY-2" value="" style="endArrow=none;html=1;rounded=0;entryX=0.463;entryY=1.04;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;opacity=40;" edge="1" parent="1" source="a_box2" target="a_box">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="610" as="sourcePoint" />
+            <mxPoint x="760" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vN-N5f46YibUxU1HvUuY-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0.463;entryY=1.04;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;opacity=40;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1243" y="870" as="sourcePoint" />
+            <mxPoint x="1237" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
